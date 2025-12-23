@@ -58,6 +58,34 @@ export default defineType({
       of: [{type: 'block'}],
     }),
     defineField({
+      name: 'form',
+      title: 'form',
+      type: 'object',
+      fields: [
+        defineField({
+          name: 'successTitle',
+          title: 'Success Title',
+          type: 'text',
+        }),
+        defineField({
+          name: 'successMessage',
+          title: 'Success Message',
+          type: 'text',
+        }),
+        defineField({
+          name: 'errorTitle',
+          title: 'Error Title',
+          type: 'text',
+        }),
+
+        defineField({
+          name: 'errorMessage',
+          title: 'Error Message',
+          type: 'text',
+        }),
+      ],
+    }),
+    defineField({
       name: 'other',
       title: 'Other ways to connect',
       type: 'object',
